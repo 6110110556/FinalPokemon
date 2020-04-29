@@ -14,8 +14,14 @@ public class GUIpokemon extends JFrame {
         JButton startButton = new JButton("START GAME");
         JButton quitButton = new JButton("QUIT");
 
+        startButton.setFont(new Font("Cunia", Font.TRUETYPE_FONT, 20));
+        quitButton.setFont(new Font("Cunia", Font.TRUETYPE_FONT, 20));
+/*
         startButton.setFont(new Font("impact",Font.TRUETYPE_FONT,20));
         quitButton.setFont(new Font("impact",Font.TRUETYPE_FONT,20));
+*/
+        startButton.setBackground(new Color(219, 135, 50));
+        quitButton.setBackground(new Color(219, 135, 50));
 
         backGroundLabel.setLayout(null);
         backGroundLabel.setBounds(0,0,1024,768);

@@ -20,8 +20,8 @@ public class DataUser {
     private int maxStamina_DataUser;
 
     // Catch for GUIPlace
-    private int pokeBall_DataUser;
-    private int mixBerry_DataUser;
+    public int pokeBall_DataUser;
+    public int mixBerry_DataUser;
     private int berry_DataUser;
     private int potionHP_DataUser;
     private int potionMP_DataUser;
@@ -30,12 +30,22 @@ public class DataUser {
     private int card_P3_DataUser;
     private int card_P4_DataUser;
 
+    /*
+    private int pokeBall_DataUser ;
 
-
+    private Item mixBerry_DataUser;
+    private Item berry_DataUser;
+    private Item potionHP_DataUser;
+    private Item potionMP_DataUser;
+    private Item card_P1_DataUser;
+    private Item card_P2_DataUser;
+    private Item card_P3_DataUser;
+    private Item card_P4_DataUser;
+    */
     //SystemAnalysis
 
     public DataUser() { 
-/*
+
         this.level_DataUser = 1;
         this.power_DataUser = (int)(((double)Math.random())*50+100)*level_DataUser;
         this.stamina_DataUser = 5;
@@ -50,7 +60,7 @@ public class DataUser {
         this.maxEXP_DataUser = level_DataUser*500;
         this.maxLevel_DataUser = 25;
         this.maxStamina_DataUser = level_DataUser*100;
-*/
+
 
         //GUIPlace
         this.pokeBall_DataUser = 10;
@@ -81,7 +91,27 @@ public class DataUser {
         this.maxEXP_DataUser = level_DataUser*500;
         this.maxLevel_DataUser = 25;
         this.maxStamina_DataUser = level_DataUser*100;
-        
+
+        this.pokeBall_DataUser = 10;
+        this.mixBerry_DataUser = 1;
+        this.berry_DataUser = 1;
+        this.potionHP_DataUser = 1;
+        this.potionMP_DataUser = 1;
+        this.card_P1_DataUser = 0;
+        this.card_P2_DataUser = 0;
+        this.card_P3_DataUser = 0;
+        this.card_P4_DataUser = 0;
+    /*
+        pokeBall_DataUser = 10;
+        mixBerry_DataUser = new Item("MixBerry", 1);
+        berry_DataUser = new Item("Berry", 1);
+        potionHP_DataUser = new Item("PotionHP", 1);
+        potionMP_DataUser = new Item("PotionMP", 1);
+        card_P1_DataUser = new Item("PokemonRankS_Card", 0);
+        card_P2_DataUser = new Item("PokemonRankA_Card", 0);
+        card_P3_DataUser = new Item("PokemonRankB_Card", 0);
+        card_P4_DataUser = new Item("PokemonRankC_Card", 0);
+*/
     } 
 
     public void maxStatus(int power, int level) {
@@ -103,7 +133,6 @@ public class DataUser {
             this.level_DataUser += 1;
             this.power_DataUser += level_DataUser*50+100; 
         }
-
     }
 
 
@@ -173,10 +202,58 @@ public class DataUser {
     }
 
         //Item
-    public void setPokeBall(int pokeball) {
-        this.pokeBall_DataUser = pokeball;
+/*
+    public void setPokeBall(int pokeBall) {
+        this.pokeBall_DataUser = pokeBall;
 
     }
+    
+
+    public void setMixBerry(int mixBerry) {
+        mixBerry_DataUser = new Item("MixBerry", mixBerry);
+
+    }
+
+    public void setBerry(int berry) {
+        berry_DataUser = new Item("Berry", berry);
+
+    }
+
+    public void setPotionHP(int potionHP) {
+        potionHP_DataUser = new Item("PotionHP", potionHP);
+
+    }    
+
+    public void setPotionMP(int potionMP) {
+        potionMP_DataUser = new Item("PotionMP", potionMP);
+
+    }
+
+    public void setCard_P1(int card_P1) {
+        card_P1_DataUser = new Item("PokemonRankS_Card", card_P1);
+
+    }
+
+    public void setCard_P2(int card_P2) {
+        card_P2_DataUser = new Item("PokemonRankA_Card", card_P2);
+
+    }
+
+    public void setCard_P3(int card_P3) {
+        card_P3_DataUser = new Item("PokemonRankB_Card", card_P3);
+
+    }
+
+    public void setCard_P4(int card_P4) {
+        card_P4_DataUser = new Item("PokemonRankC_Card", card_P4);
+
+    }
+    */
+    public void setPokeBall(int pokeBall) {
+        this.pokeBall_DataUser = pokeBall;
+
+    }
+    
 
     public void setMixBerry(int mixBerry) {
         this.mixBerry_DataUser = mixBerry;
@@ -282,7 +359,8 @@ public class DataUser {
     public int getStamina() {
         return stamina_DataUser;
     }
-    
+        //Item
+
     public int getPokeBall() {
         return pokeBall_DataUser;
     }

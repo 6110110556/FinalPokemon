@@ -16,8 +16,13 @@ public class Item {
     }
 */
 
-    public String getName() {
-        return this.nameItem_Item;
+    public String getNameItem() {
+        return nameItem_Item;
     }
+
+    public int getNumItem() {
+        return numItem_Item;
+    }
+
 
 }

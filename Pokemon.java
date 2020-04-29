@@ -44,8 +44,8 @@ public abstract class Pokemon{
     }
 
             //Get
-    public void getName(){
-        System.out.println(this.name);
+    public String getNamePokemon(){
+        return name;
 
     }
 

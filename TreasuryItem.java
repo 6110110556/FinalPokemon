@@ -5,49 +5,49 @@ public class TreasuryItem {
     private int rateEffectItem;
     private DataUser data;
 
-    private Item item01_TreasuryItem;
-    private Item item02_TreasuryItem;
-    private Item item03_TreasuryItem;
-    private Item item04_TreasuryItem;
-    private Item item05_TreasuryItem;
-    private Item item06_TreasuryItem;
-    private Item item07_TreasuryItem;
-    private Item item08_TreasuryItem;
-    private Item item09_TreasuryItem;
+    private Item itemMixBerry_TreasuryItem;
+    private Item itemBerry_TreasuryItem;
+    private Item itemPotionHP_TreasuryItem;
+    private Item itemPotionMP_TreasuryItem;
+
+    private Item itemPokemonRankA_Card_TreasuryItem;
+    private Item itemPokemonRankB_Card_TreasuryItem;
+    private Item itemPokemonRankC_Card_TreasuryItem;
+    private Item itemPokemonRankD_Card_TreasuryItem;
 
 
-    private String nameItem01_TreasuryItem;
-    private String nameItem02_TreasuryItem;
-    private String nameItem03_TreasuryItem;
-    private String nameItem04_TreasuryItem;
-    private String nameItem05_TreasuryItem;
-    private String nameItem06_TreasuryItem;
-    private String nameItem07_TreasuryItem;
-    private String nameItem08_TreasuryItem;
-    private String nameItem09_TreasuryItem;
+    private String nameItemMixBerry_TreasuryItem;
+    private String nameItemBerry_TreasuryItem;
+    private String nameItemPotionHP_TreasuryItem;
+    private String nameItemPotionMP_TreasuryItem;
+    private int pokeBall;
 
-    public TreasuryItem() {
-        data = new DataUser();
+    private String nameItemPokemonRankA_Card_TreasuryItem;
+    private String nameItemPokemonRankB_Card_TreasuryItem;
+    private String nameItemPokemonRankC_Card_TreasuryItem;
+    private String nameItemPokemonRankD_Card_TreasuryItem;
+
+    public TreasuryItem(DataUser data) {
         this.rateEffectItem = 20;
-        this.nameItem01_TreasuryItem = "MixBerry";
-        this.nameItem02_TreasuryItem = "Berry";
-        this.nameItem03_TreasuryItem = "PotionHP";
-        this.nameItem04_TreasuryItem = "PotionMP";
-        this.nameItem05_TreasuryItem = "PokeBall";
-        this.nameItem06_TreasuryItem = "PokemonRankA_Card";
-        this.nameItem07_TreasuryItem = "PokemonRankB_Card";
-        this.nameItem08_TreasuryItem = "PokemonRankC_Card";
-        this.nameItem09_TreasuryItem = "PokemonRankD_Card";
+        this.nameItemMixBerry_TreasuryItem = "MixBerry";
+        this.nameItemBerry_TreasuryItem = "Berry";
+        this.nameItemPotionHP_TreasuryItem = "PotionHP";
+        this.nameItemPotionMP_TreasuryItem = "PotionMP";
+        this.pokeBall = data.getPokeBall();
+        this.nameItemPokemonRankA_Card_TreasuryItem = "PokemonRankA_Card";
+        this.nameItemPokemonRankB_Card_TreasuryItem = "PokemonRankB_Card";
+        this.nameItemPokemonRankC_Card_TreasuryItem = "PokemonRankC_Card";
+        this.nameItemPokemonRankD_Card_TreasuryItem = "PokemonRankD_Card";
 
-        item01_TreasuryItem = new Item(nameItem01_TreasuryItem, data.getMixBerry());
-        item02_TreasuryItem = new Item(nameItem02_TreasuryItem, data.getBerry());
-        item03_TreasuryItem = new Item(nameItem03_TreasuryItem, data.getPotionHP());
-        item04_TreasuryItem = new Item(nameItem04_TreasuryItem, data.getPotionMP());
-        item05_TreasuryItem = new Item(nameItem05_TreasuryItem, data.getPokeBall());
-        item06_TreasuryItem = new Item(nameItem06_TreasuryItem, data.getCard_P1());
-        item07_TreasuryItem = new Item(nameItem07_TreasuryItem, data.getCard_P2());
-        item08_TreasuryItem = new Item(nameItem08_TreasuryItem, data.getCard_P3());
-        item09_TreasuryItem = new Item(nameItem09_TreasuryItem, data.getCard_P4());
+        itemMixBerry_TreasuryItem = new Item(nameItemMixBerry_TreasuryItem, data.getMixBerry());
+        itemBerry_TreasuryItem = new Item(nameItemBerry_TreasuryItem, data.getBerry());
+        itemPotionHP_TreasuryItem = new Item(nameItemPotionHP_TreasuryItem, data.getPotionHP());
+        itemPotionMP_TreasuryItem = new Item(nameItemPotionMP_TreasuryItem, data.getPotionMP());
+
+        itemPokemonRankA_Card_TreasuryItem = new Item(nameItemPokemonRankA_Card_TreasuryItem, data.getCard_P1());
+        itemPokemonRankB_Card_TreasuryItem = new Item(nameItemPokemonRankB_Card_TreasuryItem, data.getCard_P2());
+        itemPokemonRankC_Card_TreasuryItem= new Item(nameItemPokemonRankC_Card_TreasuryItem, data.getCard_P3());
+        itemPokemonRankD_Card_TreasuryItem= new Item(nameItemPokemonRankD_Card_TreasuryItem, data.getCard_P4());
 
 
     }
@@ -104,42 +104,49 @@ public class TreasuryItem {
         data.setMixBerry(mixBerry);
     }
 
-    public Item getItem01() {
-        return item01_TreasuryItem;
+    public Item getItemBerry() {
+        return itemBerry_TreasuryItem;
+
     }
 
-    public Item getItem02() {
-        return item02_TreasuryItem;
+    public Item getItemMixBerry() {
+        return itemMixBerry_TreasuryItem;
+
     }
 
-    public Item getItem03() {
-        return item03_TreasuryItem;
+    public Item getItemPotionHP() {
+        return itemPotionHP_TreasuryItem;
+
     }
 
-    public Item getItem04() {
-        return item04_TreasuryItem;
+    public Item getItemPotionMP() {
+        return itemPotionMP_TreasuryItem;
+
     }
 
-    public Item getItem05() {
-        return item05_TreasuryItem;
+    public Item getItemPokemonRankA_Card() {
+        return itemPokemonRankA_Card_TreasuryItem;
+
     }
 
-    public Item getItem06() {
-        return item06_TreasuryItem;
+    public Item getItemPokemonRankB_Card() {
+        return itemPokemonRankB_Card_TreasuryItem;
+
     }
 
-    public Item getItem07() {
-        return item07_TreasuryItem;
+    public Item getItemPokemonRankC_Card() {
+        return itemPokemonRankC_Card_TreasuryItem;
+
     }
 
-    public Item getItem08() {
-        return item08_TreasuryItem;
+    public Item getItemPokemonRankD_Card() {
+        return itemPokemonRankD_Card_TreasuryItem;
+
     }
 
-    public Item getItem09() {
-        return item09_TreasuryItem;
+    public int getPokeBall() {
+        return pokeBall;
     }
-
 
 
 
